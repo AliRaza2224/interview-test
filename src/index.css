@@ -5,9 +5,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.footer-top{
+  top: 245%;
+  z-index: 99;
+  right: 104px;
+}
+.footer-top a{
+  text-decoration: none;
+}
+.footer-date{
+  width: 70px !important;
+    height: 70px;
+    background-color: #0095eb;
+    padding: 10px 0px;
+}
+.footer-list ul{
+    list-style: none; 
+    padding: 0px;
+}
+.footer-list ul li{
+  padding: 5px 0px; 
+}
+.footer-list ul li:before {
+  content: '\276D';
+}
+.footer-list ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer-list ul li a:hover{
+  color: #0095eb;
 }

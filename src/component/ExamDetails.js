@@ -5,7 +5,7 @@ function ExamDetails() {
         <div className='container py-4'>
             <h3 className='py-2'><b>Citrix 1Y0-440 Exam</b></h3>
             <div className='border p-2 '>
-                <div style={{lineHeight:".5"}}>
+                <div style={{lineHeight:".5"}} className='citrix'>
                     <p><b>Certification Provider:</b> Citrix</p>
                     <p><b>Exam Name:</b>  Architecting a Citrix Networking Solution</p>
                     <p><b>Duration:</b>   150 Minutes</p>

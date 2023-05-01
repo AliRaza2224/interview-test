@@ -4,7 +4,7 @@ import { GrFormNext } from 'react-icons/gr'
 
 function Footer() {
     return (
-        <div className='text-light position-relative' style={{background:'black', paddingTop:"160px"}} >
+        <div className='text-light footer' style={{background:'black', paddingTop:"160px"}} >
             <div className='container'>
                 <div className='row row-cols-md-3 row-cols-1'>
                     <div className='col'>

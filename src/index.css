@@ -17,11 +17,7 @@ code {
   color: white;
   display: inline-block;
 }
-.footer-top{
-  top: 245%;
-  z-index: 99;
-  right: 104px;
-}
+
 .footer-top a{
   text-decoration: none;
 }
@@ -47,4 +43,163 @@ code {
 }
 .footer-list ul li a:hover{
   color: #0095eb;
+}
+.questions-radio .radio-button {
+  display: block;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.questions-radio .radio-button input[type="radio"] {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.questions-radio .radio-button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.questions-radio .radio-button input[type="radio"]:checked + span {
+  background-color: black;
+}
+.questions-radio .radio-button input[type="radio"]:checked + span::before {
+  content: '';
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: black;
+  border-radius: 50%;
+}
+.questions-multiple-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* Style the custom checkbox container */
+.questions-multiple-checkbox .checkbox-container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  padding-left: 35px;
+}
+
+/* Style the custom checkbox */
+.questions-multiple-checkbox .checkmark {
+  content: '';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 0.5rem;
+}
+
+/* Show the custom checkbox when checked */
+.questions-multiple-checkbox .checkbox-container input:checked + .checkmark::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 4px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: black;
+}
+
+/* Style the checkbox label */
+/* .questions-multiple-checkbox .checkbox-container span {
+  margin-left: 30px;
+} */
+
+/* On mouse-over, add a grey background color */
+.questions-multiple-checkbox .checkbox-container:hover input + .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.questions-multiple-checkbox .checkbox-container input:checked + .checkmark {
+  background-color: black;
+  border: 2px solid ;
+}
+.footer{
+  position: relative;
+}
+.footer-top{
+  position: absolute;
+  bottom: -265%;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none !important;
+  }
+  .citrix{
+    line-height: 1 !important;
+  }
+  .logo{
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .logo img{
+    display: flex;
+    margin: auto;
+    justify-content: center !important;
+  }
+  .exam-update .w-50{
+    width: 80% !important;
+    
+  }
+  .exam-update .w-50 .py-3{
+    padding: 10px 0px !important;
+  }
+  .exam-update .w-50 .p-4{
+    padding: 15px !important;
+  }
+  .exam-update h5{
+    font-size: 15px;
+  }
+  .discussion .w-25, .discussion .w-50{
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .discussion .my-5{
+    margin: 5px 0px !important;
+  }
+  .footer-top{
+    position: static;
+  }
+  .footer-top .container{
+    padding: 0;
+  }
+  .footer-top .pe-5{
+    padding: 10px 0 !important;
+  }
+  .footer-top .border-end{
+    border: none !important;
+  }
 }

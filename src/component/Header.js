@@ -9,7 +9,7 @@ import {BsPinterest} from "react-icons/bs"
 
 function Header() {
   return (
-    <div>
+    <div className='desktop'>
         <div className='bg-dark text-light py-2'>
             <div className='d-flex justify-content-between container ' variant="dark">
                 <div className='d-flex justify-content-between align-items-center'>

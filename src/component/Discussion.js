@@ -5,10 +5,10 @@ import {FiArrowRight} from 'react-icons/fi'
 
 function Discussion() {
   return (
-    <div className='position-relative'>
-        <div className='d-flex justify-content-between container py-3'>
-        <Button variant="primary" >More Questions <FiArrowRight style={{color:'white', stroke:'white', fill:'white'}}/></Button>{' '}
-        <Button variant="success">Explore Other Citix Exams</Button>{' '}
+    <div className='container discussion'>
+        <div className='row row-cols-1 row-cols-md-2 justify-content-between container py-3'>
+        <Button variant="primary" className='w-25'>More Questions <FiArrowRight style={{color:'white', stroke:'white', fill:'white'}}/></Button>{' '}
+        <Button variant="success" className='w-25'>Explore Other Citix Exams</Button>{' '}
         </div>
         <div className='container' style={{paddingBottom:'150px'}}>
             <p> <b>Disscuss Citrix 1Y0-440 Topics, Questions or Ask Anything Related</b></p>
